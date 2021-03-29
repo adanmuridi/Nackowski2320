@@ -1,6 +1,6 @@
 <mxfile>
     <diagram id="jyWivoFotawjM3F5wBjq" name="Auktioner">
-        <mxGraphModel dx="1778" dy="2250" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1778" dy="2130" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -161,7 +161,7 @@
         </mxGraphModel>
     </diagram>
     <diagram name="Auktion" id="7xlfVlV7b8FzsgKHMDr6">
-        <mxGraphModel dx="1778" dy="1150" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1778" dy="1030" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="tn4pPZs90tScDQ_xrxVo-0"/>
                 <mxCell id="tn4pPZs90tScDQ_xrxVo-1" parent="tn4pPZs90tScDQ_xrxVo-0"/>
