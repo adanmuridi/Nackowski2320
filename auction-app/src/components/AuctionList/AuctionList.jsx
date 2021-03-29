@@ -1,7 +1,7 @@
 // import '/AuctionList.css'
 
 const AuctionList = () => {
-    <label>Test</label>
+    return(<label>Test</label>)
 }
 
 export default AuctionList;
