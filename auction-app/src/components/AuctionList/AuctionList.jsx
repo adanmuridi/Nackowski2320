@@ -1,6 +1,7 @@
-// import '/AuctionList.css'
+import './AuctionList.css'
 
 const AuctionList = () => {
+
     return(<label>Test</label>)
 }
 
