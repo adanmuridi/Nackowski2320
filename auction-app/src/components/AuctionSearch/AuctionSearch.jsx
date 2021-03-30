@@ -11,7 +11,8 @@ const AuctionSearch = ({searchValue}) => {
     return(
         <>
         <input type='text' ref={searchValue}/>
-        <button onClick={() => search(searchValue.current.value)}>Söötsch</button>
+        <br/><br/>
+        <button onClick={() => search(searchValue.current.value)}>Sök auktion</button>
         </>
     )
 }
