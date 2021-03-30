@@ -6,9 +6,9 @@ const AuctionList = ({items}) => {
     let list = items.map(auctionItem => {
         return(
         <AuctionItem item={auctionItem} key={auctionItem.AuktionID}/>)
-    })
+    });
 
-    return (<>{list}</>)
+    return (<>{list}</>);
 }
 
 export default AuctionList;
