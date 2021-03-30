@@ -16,8 +16,8 @@ const AuctionContainer = () => {
             AuktionID: null,
             Titel: title,
             Beskrivning: description,
-            StartDatum: "2018-03-24T00:00:00",
-            SlutDatum: "2019-04-30T00:00:00",
+            StartDatum: new Date(),
+            SlutDatum: endDate,
             Gruppkod: 3020,
             Utropspris: startingPrice,
             SkapadAv: createdBy           

@@ -13,7 +13,7 @@ const NewAuction = ({create}) => {
         Beskrivning<br />
         <input type="text" ref={description} /><br />
         Slutdatum<br />
-        <input type="text" ref={endDate} /><br />
+        <input type="date" ref={endDate} /><br />
         Utropspris<br />
         <input type="text" ref={startingPrice} /><br />
         Skapad av<br />
