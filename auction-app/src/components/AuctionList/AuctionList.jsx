@@ -2,7 +2,11 @@ import './AuctionList.css'
 
 const AuctionList = () => {
 
-    return(<label>Test</label>)
+    let list = items.map(auctionItem => {
+        return(<AuctionItem item = {auctionItem}/>)
+    })
+
+    return (<>{list}</>)
 }
 
 export default AuctionList;
