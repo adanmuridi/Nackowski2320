@@ -3,14 +3,14 @@ import { useRef } from "react"
 const PlaceBid = (props) => {
 
     const bid = useRef();
-    const bider = useRef();
+    const bidder = useRef();
 
     return (<>
         <input placeholder="Bud" ref={bid}></input>
         <br></br>
-        <input placeholder="Budgivare" ref={bider}></input>
+        <input placeholder="Budgivare" ref={bidder}></input>
         <br></br>
-        <button onClick={() => {props.CreateNewBid()}}>Placera bud</button>
+        <button onClick={() => {props.create(bid.current.value, bidder.current.value)}}>Placera bud</button>
         <br></br>
     </>)
 }
