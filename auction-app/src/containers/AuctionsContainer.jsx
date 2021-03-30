@@ -18,7 +18,7 @@ const AuctionContainer = () => {
             Beskrivning: description,
             StartDatum: new Date(),
             SlutDatum: endDate,
-            Gruppkod: 3020,
+            Gruppkod: 2320,
             Utropspris: startingPrice,
             SkapadAv: createdBy           
         }
