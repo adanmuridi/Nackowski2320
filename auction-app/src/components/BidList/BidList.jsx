@@ -1,8 +1,8 @@
 import BidItem from '../BidItem/BidItem'
 
-const BidList = (props) => {
+const BidList = ({items}) => {
 
-    const list = props.items.map(item =>
+    const list = items.map(item =>
         <BidItem summa={item.Summa} budgivare={item.Budgivare}></BidItem>
         )
 
@@ -10,3 +10,5 @@ const BidList = (props) => {
     {list}
     </>)
 }
+
+export default BidList;
