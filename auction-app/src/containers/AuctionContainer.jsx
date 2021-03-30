@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import AuctionSearch from '../components/SWAPISearch';
+import AuctionSearch from '../components/AuctionSearch';
 
 const AuctionContainer = () => {
 
@@ -15,10 +15,8 @@ const AuctionContainer = () => {
             
             
             const{} = result;
-            alert('Antal träffar: ' + count);
             setResult(results);
         })
-
     }
 
     
