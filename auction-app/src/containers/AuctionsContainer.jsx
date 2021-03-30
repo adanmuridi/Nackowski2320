@@ -44,7 +44,7 @@ const AuctionContainer = () => {
     }
 
     return(<>
-        <AuctionSearch list={auctionList}/>
+        <AuctionSearch items={auctionList}/>
         <NewAuction create={create} />
         <AuctionList items={auctionList} />
     </>);
