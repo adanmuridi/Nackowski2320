@@ -7,6 +7,7 @@ const AuctionContainer = () => {
     const url = "http://nackowskis.azurewebsites.net/api/auktion/2320"
 
     const[auctionList, setAuctionList] = useState([]);
+    const[filteredAuctionList, setFilteredAuctionList] = useState([]);
 
     useEffect(() => {
         fetch(url)
