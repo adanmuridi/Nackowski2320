@@ -16,7 +16,6 @@ const AuctionContainer = () => {
         });
     }, []);
 
-
     const create = (title, description, endDate, startingPrice, createdBy) => {
         const url = "http://nackowskis.azurewebsites.net/api/auktion/2320";
 
