@@ -1,13 +1,20 @@
+import React,{useState, useEffect} from 'react';
 import AuctionList from '../components/AuctionList/AuctionList';
 import NewAuction from '../components/NewAuction/NewAuction';
 
 const AuctionContainer = () => {
     const url = "http://nackowskis.azurewebsites.net/api/auktion/2320"
 
-    fetch(url).then(response => response.json()).then(json => {
+    const[auctionList, setAuctionList] = useState([]);
 
-        
-    });
+    useEffect(() => {
+        fetch(url)
+        .then(response => response.json())
+        .then(result => {
+            setAuctionList(result);
+        });
+    }, []);
+
 
     const create = (title, description, endDate, startingPrice, createdBy) => {
         const url = "http://nackowskis.azurewebsites.net/api/auktion/2320";
@@ -38,7 +45,7 @@ const AuctionContainer = () => {
 
     return(<>
         <NewAuction create={create} />
-        <AuctionList />
+        <AuctionList items={auctionList} />
     </>);
 }
 
