@@ -29,15 +29,20 @@ const NewAuction = ({create}) => {
 
     return (<div>
         Title<br/>
-        <input type="text" ref={title}  value={defaultTitle} onChange={(e) => setTitle(e.target.value)} /><br />
+        <input type="text" ref={title}  value={defaultTitle} onChange={(e) => setTitle(e.target.value)} />
+        <label>Error!</label><br />
         Beskrivning<br />
-        <input type="text" ref={description} value={defaultdescription} onChange={(e) => setDescription(e.target.value)} /><br />
+        <input type="text" ref={description} value={defaultdescription} onChange={(e) => setDescription(e.target.value)} />
+        <label>Error!</label><br />
         Slutdatum<br />
-        <input type="date" ref={endDate} value={defaultEndDate} onChange={(e) => setDate(e.target.value)} /><br />
+        <input type="date" ref={endDate} value={defaultEndDate} onChange={(e) => setDate(e.target.value)} />
+        <label>Error!</label><br />
         Utropspris<br />
-        <input type="text" ref={startingPrice} value={defaultStartingPrice} onChange={(e) => setStartingPrice(e.target.value)} /><br />
+        <input type="text" ref={startingPrice} value={defaultStartingPrice} onChange={(e) => setStartingPrice(e.target.value)} />
+        <label>Error!</label><br />
         Skapad av<br />
-        <input type="text" ref={createdBy} value={defaultCreatedBy} onChange={(e) => setCreatedBy(e.target.value)}/><br />
+        <input type="text" ref={createdBy} value={defaultCreatedBy} onChange={(e) => setCreatedBy(e.target.value)}/>
+        <label>Error!</label><br />
         <button onClick={() => handleSubmit()} >Skapa</button>
     </div>);
 }

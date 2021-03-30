@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import AuctionList from '../components/AuctionList/AuctionList';
 import NewAuction from '../components/NewAuction/NewAuction';
+import Search from '../components/Search/Search';
 
 const AuctionContainer = () => {
     const url = "http://nackowskis.azurewebsites.net/api/auktion/2320"
@@ -42,7 +43,17 @@ const AuctionContainer = () => {
         });
     }
 
+    const search = (searchValue) => {
+        fetch(url)
+        .then(response => response.json())
+        .then(result => {
+            var filteredList = result.filter(item => item.toLowerCase().includes(searchValue.toLowerCase()));
+            setAuctionList(filteredList);
+        });
+    }
+
     return(<>
+        <Search search={search} />
         <NewAuction create={create} />
         <AuctionList items={auctionList} />
     </>);
