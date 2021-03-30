@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import AuctionList from './components/AuctionList/AuctionList';
+import AuctionsContainer from './containers/AuctionsContainer';
 
 function App() {
   return (
     <>
-      <AuctionList></AuctionList>
+      <AuctionsContainer />
     </>
   );
 }
