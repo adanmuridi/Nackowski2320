@@ -1,7 +1,6 @@
 import React,{useState, useEffect} from 'react';
 import AuctionList from '../components/AuctionList/AuctionList';
 import NewAuction from '../components/NewAuction/NewAuction';
-import AuctionSearch from '../components/AuctionSearch/AuctionSearch';
 
 const AuctionContainer = () => {
     const url = "http://nackowskis.azurewebsites.net/api/auktion/2320"
