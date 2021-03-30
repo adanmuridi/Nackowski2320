@@ -2,9 +2,12 @@ import React from 'react';
 
 //useRef för att peka på textbox med sökvärde
 
-const AuctionSearch = ({searchValue}) => {
+const AuctionSearch = ({searchValue, list}) => {
 
     const searchValue = useRef();
+
+    const filteredAuctions = list.filter(item => item.toLowerCase()
+    .includes(searchValue.toLowerCase()));
 
     //search = callback funktion, innehåller pekare till searchfunktion i container
     //triggar search-event
