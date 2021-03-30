@@ -1,5 +1,5 @@
 import AuctionList from '../components/AuctionList/AuctionList';
-import NewAuction from '../components/NewAuction/NewAction';
+import NewAuction from '../components/NewAuction/NewAuction';
 
 const AuctionContainer = () => {
     const url = "http://nackowskis.azurewebsites.net/api/auktion/2320"

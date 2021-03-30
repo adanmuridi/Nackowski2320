@@ -1,4 +1,4 @@
-import React,{useRef} from 'react';
+import React,{useRef, useState} from 'react';
 
 const NewAuction = ({create}) => {
     const title = useRef();
@@ -7,9 +7,11 @@ const NewAuction = ({create}) => {
     const startingPrice = useRef();
     const createdBy = useRef();
 
+    const[defaultTitle, setDefaultTitle] = useState("");
+
     return (<div>
         Title<br/>
-        <input type="text" ref={title} /><br />
+        <input type="text" ref={title} value={defaultTitle}/><br />
         Beskrivning<br />
         <input type="text" ref={description} /><br />
         Slutdatum<br />
