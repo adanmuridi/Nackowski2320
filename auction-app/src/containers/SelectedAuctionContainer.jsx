@@ -28,7 +28,7 @@ const SelectedAuctionContainer = ({id}) => {
             Budgivare: bidder,
             AuktionID: id
         }
-        const url = "http://nackowskis.azurewebsites.net/api/bud/2320/" + id;
+        const url = "https://nackowskis.azurewebsites.net/api/bud/2320/" + id;
         fetch(url,{
             method: 'POST',
             body: JSON.stringify(newItem),
